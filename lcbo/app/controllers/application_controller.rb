@@ -1,4 +1,4 @@
-	require 'open-uri'
+require 'open-uri'
 class ApplicationController < ActionController::Base
 
   # Prevent CSRF attacks by raising an exception.

@@ -3,8 +3,9 @@
 <%= link_to "Back", "/products" %><br>
 
 <%= image_tag @product['image_thumb_url'] %><br>
-<%= @product['name'] %><br>
-<%= format_price(@product['price_in_cents']) %><br>
-<%= @product['primary_category'] %>
+Name: <%= @product['name'] %><br>
+Price: <%= format_price(@product['price_in_cents']) %><br>
+Category: <%= @product['primary_category'] %><br>
+Inventory: <%= number_with_delimiter(@product['inventory_count'], :delimiter => ',') %>
 
 
