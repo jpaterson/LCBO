@@ -1,0 +1,10 @@
+<h1>Product</h1>
+
+<%= link_to "Back", "/products" %><br>
+
+<%= image_tag @product['image_thumb_url'] %><br>
+<%= @product['name'] %><br>
+<%= format_price(@product['price_in_cents']) %><br>
+<%= @product['primary_category'] %>
+
+
